@@ -61,4 +61,4 @@ Pour finir, nous utilisons le transformateur CSS   `translateX(-50%)`. Parce que
 
 ## Emballé
 
-Espérons que cette astuce courte et douce vous aidera dans vos projets. Si c'est le cas, envoyez-moi un [tweet]((https://twitter.com/andybelldesign), car j'aimerais beaucoup le voir !
+Espérons que cette astuce courte et douce vous aidera dans vos projets. Si c'est le cas, envoyez-moi un [tweet](https://twitter.com/andybelldesign), car j'aimerais beaucoup le voir !
