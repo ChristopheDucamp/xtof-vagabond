@@ -1,4 +1,4 @@
-# Un projet de site web collaboratif pour partir naviguer en 2010 aux îles Marquises
+# Un projet de site web pour préparer une navigation vers les Iles Marquises
 
 J'ai choisi le paquet de code Hylia associé à une motorisation [Eleventy](https://11ty.io) pour pouvoir disposer d'un [CMS Netlify](https://www.netlifycms.org/) préconfiguré, afin de disposer d'un petit blog ouvert aux amis et à la famille. Le package proposé par Andy Bell me semble bien organisé pour envisager un premier point de départ personnel pour quelques réglages indieweb avant d'inviter des amis voyageurs à contribuer dans une interface de publication accessible aux non développeurs.
 
@@ -6,50 +6,50 @@ J'ai choisi le paquet de code Hylia associé à une motorisation [Eleventy](http
 
 Hylia version 0.2.0 :
 
-✍️ A pre-configured [Netlify CMS](https://www.netlifycms.org/) setup  
-🎨 Customisable design tokens to make it your own  
-🌍 Customisable global data and navigation  
-📂 Tags and tag archives  
+✍️ Un [CMS Netlify](https://www.netlifycms.org/) pré-configuré  
+🎨 des design tokens personnalisables  
+🌍 Données globales et navigation personnalisable
+📂 Tags et archives de tag
 ✅ Progressively enhanced, semantic and accessible  
-🎈 _Super_ lightweight front-end  
-🚰 Sass powered CSS system with utility class generator  
-⚙️  Service worker that caches pages so people can read your articles offline  
-🚀 An RSS feed for your posts
+🎈 Front-end _super_ léger
+🚰 Système CSS motorisé par Sass avec utilitaire de générateur de classes
+⚙️ Service worker qui met en cache les pages afin que les équipiers puissent lire les articles hors-ligne au milieu de l'océan
+🚀 Un fil RSS pour les articles
 
 ## Plan de Route 
 
-💬 [Netlify Forms](https://www.netlify.com/docs/form-handling/) powered comments  
-💡 Dark/Light mode toggle  
+💬 Commentaires motorisés par les [Netlify Forms](https://www.netlify.com/docs/form-handling/)
+💡 Bascule pour les quarts de nuit en mode Sombre
 🗣 Webmentions  
 📖 Pagination  
-🐦 Web sharing API integration  
-🗒 Offline mode with links to cached pages  
-📄 Documentation site  
-💅 Proper Sass documentation  
-✍️ Proper CMS documentation  
-🖼 A facility for you to be able to add your logo / branding
+🐦 Intégration API de partage Web
+🗒 Mode hors-ligne avec liens vers les pages mises en cache
+📄 Site de Documentation 
+💅 Documentation Sass
+✍️ Documentation propre au CMS
+🖼 Une facilité pour pouvoir ajouter facilement un logo ou une marque
 
 ***
 
 ## Démarrage 
 
-### Chosi la Méthode d'un déploiement en un-clic vis Netlify 
+### Choisi la Méthode d'un déploiement en un-clic vis Netlify 
 
 Vous pouvez aussi [déployer Hylia vers Netlify en un clic][deploy-to-netlify] et vous aurez votre site fonctionnel en quelques minutes.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)][deploy-to-netlify]
+[![Déployer vers Netlify](https://www.netlify.com/img/deploy/button.svg)][deploy-to-netlify]
 
 Andy Bell a enregistré une vidéo rapide de son déploiement d'Hylia ver Netlify pour paramétrer le Gestionnaire de Contenu. [Regardez ici](https://youtu.be/0hM_0BH-Y_A).
 
 
-### Méthode deux : Cloner / Forker
+### Méthode deux : Cloner / Forker (ligne de commande)
 
-1. Clone or fork this repo: `git clone https://github.com/andybelldesign/hylia`
-2. `cd` into the project directory and run `npm install`
-3. Once all the dependencies are installed run `npm start`
-4. Open your browser at `http://localhost:8080` and away you go!
+1. Clonez ou forkez ce repo : `git clone https://github.com/andybelldesign/hylia`
+2. `cd` à l'intérieur du répertoire du projet et lancez `npm install`
+3. Une fois toutes les dépendances installées, lancez `npm start`
+4. Ouvrez votre navigateur sur `http://localhost:8080` et partez naviguer !
 
-## Commandes de Terminal à tester 
+## Commandes de Terminal
 
 ### Servir le site localement
 
@@ -77,9 +77,10 @@ npm run sass:tokens
 
 ## Démarrer avec le CMS
 
-Before you can use the CMS, you need to do some config in Netlify. Luckily they provide a [very handy guide to get started](https://www.netlify.com/docs/identity/).
+Avant de pouvoir utiliser le CMS, vous devrez faire un peu de config dans Netlify. 
+Heureusement, ils fournissent un [guide très pratique pour démarrer](https://www.netlify.com/docs/identity/).
 
-In short, though:
+En résumé,
 
 - Once you’ve set up the site on Netlify, go to “Settings” > “Identity” and enable Identity
 - Scroll down to the “Git Gateway” area, click “Enable Git Gateway” and follow the steps
@@ -108,7 +109,7 @@ To change the design tokens directly, edit [`_src/data/tokens.json`](https://git
 
 The tokens are converted into maps that the Sass uses to compile the front-end CSS, so make sure that you maintain the correct structure of `tokens.json`.
 
-### Styleguide
+### Guide de Style
 
 Your version of Hylia ships with a Styleguide by default. You can see a demo of the Styleguide at <https://hylia.website/styleguide/>.
 
@@ -132,7 +133,7 @@ Key elements:
 - `$metrics`: Various misc metrics to use around the site
 - `$stalfos-config`: This powers everything from utility class generation to breakpoints to enabling/disabling pre-built components/utilities
 
-### How to create a new utility class with the generator
+### Comment créer une nouvelle classe utilitaire avec le générateur
 
 The utility class generator lets you generate whatever you want, with no opinions on class name or properties affected.
 
@@ -153,7 +154,7 @@ The `output` is set to `responsive` which means every breakpoint will generate a
 
 If you only want standard utility classes generating, set the `output` to `standard`.
 
-### Functions
+### Fonctions
 
 #### `get-color($key)`
 
