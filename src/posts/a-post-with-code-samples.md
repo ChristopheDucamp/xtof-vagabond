@@ -2,7 +2,7 @@
 title: Un premier post avec des échantillons de code
 date: '2019-06-18'
 tags:
-  - demo-content
+  - contenu-demi
   - code
   - blog
 ---
