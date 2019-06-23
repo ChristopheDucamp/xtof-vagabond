@@ -1,6 +1,6 @@
 # Un projet de site web collaboratif pour partir naviguer en 2010 aux îles Marquises
 
-J'ai choisi le paquet de code Hylia associé à une motorisation [Eleventy](https://11ty.io) pour pouvoir disposer d'un [CMS Netlify](https://www.netlifycms.org/) préconfiguré, afin de disposer d'un petit blog ouvert aux amis et à la famille. Le package proposé par Andy Bell me semble à cette bien organisé pour un premier point de départ personnel avant d'inviter des amis et voyageurs.
+J'ai choisi le paquet de code Hylia associé à une motorisation [Eleventy](https://11ty.io) pour pouvoir disposer d'un [CMS Netlify](https://www.netlifycms.org/) préconfiguré, afin de disposer d'un petit blog ouvert aux amis et à la famille. Le package proposé par Andy Bell me semble bien organisé pour envisager un premier point de départ personnel pour quelques réglages indieweb avant d'inviter des amis voyageurs à contribuer dans une interface de publication accessible aux non développeurs.
 
 ## Fonctionnalités
 
@@ -179,27 +179,28 @@ Pass in the key of one of your breakpoints set in `$stalfos-config['breakpoints'
 
 ## CMS
 
-Hylia has [Netlify CMS](https://www.netlifycms.org/) pre-configured as standard. You can customise the configuration by editing [`src/admin/config.yml`](https://github.com/andybelldesign/hylia/blob/master/src/admin/config.yml).
+Hylia dispose du [CMS Netlify](https://www.netlifycms.org/) pre-configuré en standard. Vous pouvez le personnaliser en modifiant [`src/admin/config.yml`](https://github.com/andybelldesign/hylia/blob/master/src/admin/config.yml).
 
-### Content that you can edit
+### Contenu que vous pouvez modifier
 
-The basic CMS setup allows you to edit the following:
+Le réglage basique du CMS vous permet de modifier ce qui suit :
 
-- **Home page**: Edit the content on your homepage
-- **Posts**: Create and edit blog posts
-- **Generic pages**: Create generic pages that use a similar layout to posts
-- **Global site data**: Various bits of global site data such as your url, title, posts per page and author details
+- **Page d'Accueil** : Éditez le contenu de votre page d'accueil
+- **Posts** : Créez et éditez les posts de blog
+- **Pages Génériques** : Créez des pages génériques qui utilisent un layout similaire aux posts
+- **Global site data** : Différents fragments de données de site globables telles que votre url, le titre, le nombre de posts par page et les détails de l'auteur.
 - **Navigation**: Edit your primary navigation items
 - **Theme**: Edit the design tokens that power the site’s theme
 
-## Get involved
+## Venez m'aider 
 
-This project is _super_ early and feedback is very much welcome. In order to keep things running smooth, please consult the [contribution guide and code of conduct](https://github.com/andybelldesign/hylia/blob/master/contributing.md).
+Ce projet est _super_ neuf et votre feedback sera le bienvenu. Afin que les choses puissent tourner en douceur, regardez SVP le  [guide de contribution et le code de conduite](https://github.com/andybelldesign/hylia/blob/master/contributing.md).
 
-The stuff that I need the most help with is:
+Les trucs où j'attends de l'aide sont : 
 
-- Documentation
+- Documentation en français 
 - [Webmentions](https://www.w3.org/TR/webmention/)
 - Performance
+- Micropub 
 
 [deploy-to-netlify]: https://app.netlify.com/start/deploy?repository=https://github.com/andybelldesign/hylia&stack=cms
