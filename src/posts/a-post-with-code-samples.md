@@ -1,12 +1,12 @@
 ---
-title: A post with code samples
+title: Un premier post avec des échantillons de code
 date: '2019-06-18'
 tags:
   - demo-content
   - code
   - blog
 ---
-The best way to demo a code post is to display a real life post, so check out this one from [andy-bell.design](https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/) about a full bleed CSS utility.
+Le meilleur moyen de démontrer un article avec du code est d'afficher un vrai post, aussi regardez celui-ci provenant  d'[andy-bell.design](https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/) concernant un utilitaire CSS full bleed.
 
 - - -
 
