@@ -1,6 +1,7 @@
-# Un projet de site web pour préparer une navigation vers les Iles Marquises
+# Défi : Construire le site web du [[Marquises Project](http://ducamp.me/Marquises_Project) (Navigation 2020 vers les Iles Marquises)
 
-J'ai choisi le paquet de code Hylia associé à une motorisation [Eleventy](https://11ty.io) pour pouvoir disposer d'un [CMS Netlify](https://www.netlifycms.org/) préconfiguré, afin de disposer d'un petit blog ouvert aux amis et à la famille. Le package proposé par Andy Bell me semble bien organisé pour envisager un premier point de départ personnel pour quelques réglages indieweb avant d'inviter des amis voyageurs à contribuer dans une interface de publication accessible aux non développeurs.
+J'ai choisi le paquet de code Hylia associé à une motorisation [Eleventy](https://11ty.io) pour pouvoir disposer d'un [CMS Netlify](https://www.netlifycms.org/) préconfiguré, afin de disposer d'un petit site statique avec blog ouvert aux amis et aux équipiers. 
+Le package proposé par Andy Bell me semble très bien organisé comme point de départ personnel avant d'intégrer quelques premières briques  indieweb. À terme, je prévois d'ajouter une UI de publication ouverte à quelques amis voyageurs prêts à contribuer. L'UI de publication retenue à cette heure est le CMS de Netlify qui me semble suffisamment simple pour des non développeurs et permet le paramétrage d'un workflow de publication. La mise à jour des articles et notes hors-connexion reste à étudier (synchronisations dès ouverture d'accès wifi ou IridiumGo)
 
 ## Fonctionnalités
 
