@@ -1,11 +1,11 @@
 {
   "showThemeCredit": true,
-  "name": "Hylia Starter Kit",
-  "shortDesc": "Hylia is a lightweight Eleventy starter kit to help you to create your own blog or personal website.",
-  "url": "https://hylia.website",
-  "authorEmail": "me@andy-bell.design",
-  "authorHandle": "@andybelldesign",
-  "authorName": "Andy Bell",
+  "name": "Marquises Project",
+  "shortDesc": "Marquises Project est un nom de code trouvé et discuté avec mon ami Patrice pour nous encourager à avancer sur le projet de traversée le Pacifique en 2020.",
+  "url": "https://christopheducamp.com",
+  "authorEmail": "christophe@ducamp.me",
+  "authorHandle": "@xtof_party",
+  "authorName": "Christophe Ducamp",
   "enableThirdPartyComments": false,
   "maxPostsPerPage": 5
 }

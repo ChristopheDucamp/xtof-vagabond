@@ -1,8 +1,8 @@
 ---
-title: A post with figures and video
-date: '2019-06-18'
+title: Un article avec des images et vidéo
+date: '2019-06-22'
 tags:
-  - demo-content
+  - contenu-demo
   - blog
   - media
 ---
