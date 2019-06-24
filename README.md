@@ -1,19 +1,16 @@
 ## Étude : migrer un blog personnel GoHugo vers Eleventy 
 
-Afin de revisiter un projet personnel articulé autour du *bien vieillir*, j'ai choisi ici de d'étudier le paquet de code Hylia proposé par Andy Bell pour accompagner une  motorisation [Eleventy](https://11ty.io). L'intention serait d'utiliser le [CMS Netlify](https://www.netlifycms.org/) préconfiguré pour mettre à jour un  petit site personnel statique, simple et moins exigeant en consommation de ligne de commande que GoHugo. 
-
-Le package Hylia me semble à cette heure très bien organisé comme point de départ personnel pour étudier et intégrer sans trop de soucis quelques premières briques fondamentales indieweb.
-
+Afin de mettre mon blog personnel à jour, j'ai choisi ici le boilerplate d'Hylia proposé par Andy Bell pour mieux appréhender la motorisation [Eleventy](https://11ty.io). Séduit à cette heure par le [CMS Netlify](https://www.netlifycms.org/) préconfiguré pour mettre à jour un site personnel statique, simple et moins exigeant en consommation de ligne de commande que GoHugo. 
+Je serai en outre attentif pour m'essayer à poser premières briques fondamentales indieweb.
 
 ## UX, UI et usages  
 
-L'UI de publication retenue à cette heure est le CMS de Netlify qui me semble suffisamment simple pour des non développeurs et dispose d'un premier workflow de publication. La mise à jour des articles et notes **hors-connexion** sera étudiée au fil de mes navigations océaniques . (Synchronisations dès ouverture d'accès wifi ou accès à étudier via IridiumGo).
+L'UI de publication retenue à cette heure est le CMS de Netlify. Une UI qui me semble suffisamment simple pour des non développeurs et dispose d'un premier workflow de publication. La mise à jour des articles et notes **hors-connexion** sera étudiée au fil de mes futures navigations océaniques. (Synchronisations dès ouverture d'accès wifi ou accès à étudier via IridiumGo).
 
 ## Point de départ : le kit de démarrage Hylia pour Eleventy
 
 Hylia est un kit de démarrage léger Eleventy avec le CMS Netlify pré-configuré, afin que vous puissiez installer en un clic, un blog accessible et progressif. Il vous donne un point de départ bien organisé pour le développer vous-même.
 Démarrez dès maintenant en déployant Hylia sur Netlify.
-
 
 ## Fonctionnalités
 
@@ -95,14 +92,14 @@ Heureusement, ils fournissent un [guide très pratique pour démarrer](https://w
 
 En résumé,
 
-- Une fois que vous avez installé le site sur Netlify, allez sur “Settings” > “Identity” et activez Identity
-- Descendez vers l'aire “Git Gateway”, cliquez sur “Enable Git Gateway” et suivez les étapes
+- Une fois que vous avez installé le site sur Netlify, allez sur “Settings” > “Identity” et activez Identity
+- Descendez vers l'aire “Git Gateway”, cliquez sur “Enable Git Gateway” et suivez les étapes
 - Cliquez sur l'onglet “Identity” tout en haut
 - Une fois que vous avez activez Identity, cliquez sur “Invite Users”
-- Regardez le lien invite dans votre boîte de réception et cliquez le lien dans l'e-mail qui vous a été envoyé
-- Réglez un mot de passe dans la boîte popup
+- Regardez le lien invite dans votre boîte de réception et cliquez le lien dans l'e-mail qui vous a été envoyé
+- Réglez un mot de passe dans la boîte popup
 - Allez sur /admin de votre site et connectez-vous
-- Vous êtes prêt.e pour éditer votre contenu !
+- Vous êtes prêt.e pour éditer votre contenu !
 
 ## Design Tokens et Guide de Style
 
@@ -112,13 +109,13 @@ Bien qu'Hylia ait un joli design vraiment simple, vous pouvez configurer les tok
 
 ***
 
-**Note** : Le crédit doit être donné au dur travail de [Jina Anne](https://aycl.uie.com/virtual_seminars/design_tokens_scaling_design_with_a_single_source_of_truth) pour avoir fait exister le concept des design tokens. Vous devriez regarder [cette vidéo](https://www.youtube.com/watch?v=wDBEc3dJJV8), et [lire ensuite cet article](https://the-pastry-box-project.net/jina-bolton/2015-march-28) et pour finir vous enregistrer à [son cours](https://twitter.com/jina) pour améliorer votre connaissance.
+**Note** : Le crédit doit être donné au dur travail de [Jina Anne](https://aycl.uie.com/virtual_seminars/design_tokens_scaling_design_with_a_single_source_of_truth) pour avoir fait exister le concept des design tokens. Vous devriez regarder [cette vidéo](https://www.youtube.com/watch?v=wDBEc3dJJV8), et [lire ensuite cet article](https://the-pastry-box-project.net/jina-bolton/2015-march-28) et pour finir vous enregistrer à [son cours](https://twitter.com/jina) pour améliorer votre connaissance.
 
 ---
 
-Pour modifier les tokens de design dans le CMS, trouvez le “Globals” dans la barre latérale puis dans les options présentées et sélectionnez “Theme Settings”.
+Pour modifier les tokens de design dans le CMS, trouvez le “Globals” dans la barre latérale puis dans les options présentées et sélectionnez “Theme Settings”.
 
-Pour changer directement les tokens de design, éditez [_src/data/tokens.json](https://github.com/andybelldesign/hylia/blob/master/src/_data/tokens.json) .
+Pour changer directement les tokens de design, éditez [_src/data/tokens.json](https://github.com/andybelldesign/hylia/blob/master/src/_data/tokens.json) .
 
 Les tokens sont convertis en cartes que le Sass utilise pour compiler le front-end CSS, aussi assurez vous de maintenir la structure correcte de `tokens.json`. 
 
