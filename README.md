@@ -49,12 +49,12 @@ Vous pouvez aussi [déployer Hylia vers Netlify en un clic][deploy-to-netlify] e
 
 [![Déployer vers Netlify](https://www.netlify.com/img/deploy/button.svg)][deploy-to-netlify]
 
-Andy Bell a enregistré une vidéo rapide de son déploiement d'Hylia ver Netlify pour paramétrer le Gestionnaire de Contenu. [Regardez ici](https://youtu.be/0hM_0BH-Y_A).
+Andy Bell a enregistré une rapide vidéo de son déploiement d'Hylia ver Netlify pour paramétrer le Gestionnaire de Contenu. [Regardez-la ici](https://youtu.be/0hM_0BH-Y_A).
 
 
 ### Méthode deux : Cloner / Forker (ligne de commande)
 
-1. Clonez ou forkez ce repo : `git clone https://github.com/andybelldesign/hylia`
+1. Clonez ou forkez le repo source : `git clone https://github.com/andybelldesign/hylia`
 2. `cd` à l'intérieur du répertoire du projet et lancez `npm install`
 3. Une fois toutes les dépendances installées, lancez `npm start`
 4. Ouvrez votre navigateur sur `http://localhost:8080` et partez naviguer !
@@ -87,8 +87,7 @@ npm run sass:tokens
 
 ## Démarrer avec le CMS
 
-Avant de pouvoir utiliser le CMS, vous devrez faire un peu de config dans Netlify. 
-Heureusement, ils fournissent un [guide très pratique pour démarrer](https://www.netlify.com/docs/identity/).
+Avant de pouvoir utiliser le CMS, vous devrez faire un peu de config dans Netlify. Heureusement, ils fournissent un [guide très pratique pour démarrer](https://www.netlify.com/docs/identity/).
 
 En résumé,
 
@@ -99,13 +98,13 @@ En résumé,
 - Regardez le lien invite dans votre boîte de réception et cliquez le lien dans l'e-mail qui vous a été envoyé
 - Réglez un mot de passe dans la boîte popup
 - Allez sur /admin de votre site et connectez-vous
-- Vous êtes prêt.e pour éditer votre contenu !
+- Vous êtes prêt pour éditer votre contenu !
 
 ## Design Tokens et Guide de Style
 
 ### Design Tokens
 
-Bien qu'Hylia ait un joli design vraiment simple, vous pouvez configurer les tokens design du noyau pour contrôler les couleurs, le ratio de taille et les fontes.
+Bien qu'Hylia ait un joli design vraiment simple, vous pouvez configurer les tokens de design du noyau afin de contrôler les couleurs, le ratio de taille et les fontes.
 
 ***
 
@@ -131,23 +130,24 @@ Hylia est basé sur la version [WIP v2 de Stalfos](https://github.com/andybellde
 
 ### Configuration
 
-Le système global Sass est motorisé par le fichier de configuration centrale, déposé ici : [_src/scss/_config.scss](https://github.com/andybelldesign/hylia/blob/master/src/scss/_config.scss).
+Le système global Sass est motorisé par le fichier de configuration centrale, déposé ici : [_src/scss/_config.scss](https://github.com/ChristopheDucamp/hylia/blob/master/src/scss/_config.scss).
 
-Avant que Sass ne soit compilé, un fichier `_tokens.scss` est généré à partir de la [config de design des tokens](https://github.com/andybelldesign/hylia/blob/master/src/_data/tokens.json) qui est requise.
+Avant que Sass ne soit compilé, un fichier `_tokens.scss` est généré à partir de la [config de design des tokens](https://github.com/ChristopheDucamp/hylia/blob/master/src/_data/tokens.json) qui est requise.
 
 Éléments-clés 
 
-- `$stalfos-size-scale` : A token driven size scale which by default, is a “Major Third” scale
-- `$stalfos-colors`: A token driven map of colours
-- `$stalfos-util-prefix`: All pre-built, framework utilities will have this prefix. Example: the wrapper utility is '.sf-wrapper' because the default prefix is 'sf-'
-- `$metrics`: Various misc metrics to use around the site
-- `$stalfos-config`: This powers everything from utility class generation to breakpoints to enabling/disabling pre-built components/utilities
+- `$stalfos-size-scale` : Un jeton pour piloter l'échelle de taille qui, par défaut, est une échelle “Major Third”
+- `$stalfos-colors` : Un jeton pour piloter une carte de couleurs
+- `$stalfos-util-prefix` : Tous préconstruits, les utilitaires de framework auront ce préfixe. Exemple : l'utilitaire wrapper est '.sf-wrapper' parce que préfixe par défaut est 'sf-'
+- `$metrics` : Différentes métriques à utiliser sur l'ensemble du site
+- `$stalfos-config` : Ceci motorise tout de la génération d'utilitaire de classe jusqu'aux breakpoints pour activer/désactiver les composants/utilitaires pré-construits.
 
 ### Comment créer une nouvelle classe utilitaire avec le générateur
 
-The utility class generator lets you generate whatever you want, with no opinions on class name or properties affected.
+Le génrateur de classes utilitaires 
+Le générateur de classes d’utilitaires vous permet de générer ce que vous voulez, sans donner d’avis sur le nom ou les propriétés de la classe.
 
-To add a new class, add another item to the exists `$stalfos-config` map. This example adds a utility for floating elements.
+Pour ajouter une nouvelle classe, ajoutez un autre élément à la carte existante `$ stalfos-config`. Cet exemple ajoute un utilitaire pour les éléments flottants.
 
 ```scss
 'float': (
@@ -160,9 +160,9 @@ To add a new class, add another item to the exists `$stalfos-config` map. This e
 )
 ```
 
-The `output` is set to `responsive` which means every breakpoint will generate a prefixed class for itself. If you only wanted elements to float left in the `md` breakpoint, you’d now be able to add a class of `md:float-left` to your HTML elements.
+L'`output` est défini sur `responsive`, ce qui signifie que chaque point d'arrêt générera une classe préfixée pour elle-même. Si vous voulez seulement que les éléments flottent à gauche dans le point d’arrêt `md`, vous devriez maintenant ajouter une classe de `md: float-left` à vos éléments HTML.
 
-If you only want standard utility classes generating, set the `output` to `standard`.
+Si vous souhaitez uniquement générer des classes d'utilitaires standard, réglez `output` sur `standard`.
 
 ### Fonctions
 
