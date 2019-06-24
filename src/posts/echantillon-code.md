@@ -11,8 +11,6 @@ Un échantillon de code utilisant la mise en surbrillance de syntaxe intégrée 
 
 Ce qui suit est un exemple de code à l'aide de  triple backticks (```) glissés dans Hugo. Il s'agit de la mise en surbrillance du côté client et cela ne nécessite **aucune installation spéciale**. 
 
-todo : installer Pygments pour des fonctionnalités supplémentaires 
-
 
 ```javascript
     var num1, num2, sum
