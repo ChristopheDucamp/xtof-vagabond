@@ -2,16 +2,13 @@
 date: '2018-09-23'
 title: 'Le système Tiret/Plus de Patrick Rhone'
 tags: [gtd, organisation,todo]
-permalink: 'tiret-plus'
-    
+permalink: 'tiret-plus' 
 ---
 
 Cette traduction est extraite du [Journal de Patrick Rhone](http://patrickrhone.com/dashplus/ "Permalien vers patrickrhone / journal » The Dash/Plus System"). 
 Seul le lien original fait référence.
 
-
-
-![](/img/note-metadonnees.jpg)
+![](https://christopheducamp.com/img/note-metadonnees.jpg)
 
 Ci-dessous une légende pour les métadonnées sur les notes
  
