@@ -14,6 +14,16 @@
       "text": "Twitter",
       "url": "https://twitter.com/xtof_party",
       "external": true
+    },
+    {
+      "text": "Micro.blog",
+      "url": "https://microblog.ducamp.me",
+      "external": true
+    },
+    {
+      "text": "WikiNow",
+      "url": "http://ducamp.me/xtof/now",
+      "external": true
     }
   ]
 }
