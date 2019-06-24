@@ -1,6 +1,6 @@
 ---
 title: 'Arrivée sur Jekyll : Ouf !'
-date: "2013-12-03 20:51:44 +01:00"
+date: "2013-12-03 20:51"
 subtitle: "Ma première page..."
 permaling: premier-pas-sur-jekyll
 tags: [jekyll]
