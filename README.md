@@ -1,7 +1,19 @@
-# Défi : Construire le site web du [[Marquises Project](http://ducamp.me/Marquises_Project) (Navigation 2020 vers les Iles Marquises)
+## Étude : migrer un blog personnel GoHugo vers Eleventy 
 
-J'ai choisi le paquet de code Hylia associé à une motorisation [Eleventy](https://11ty.io) pour pouvoir disposer d'un [CMS Netlify](https://www.netlifycms.org/) préconfiguré, afin de disposer d'un petit site statique avec blog ouvert aux amis et aux équipiers. 
-Le package proposé par Andy Bell me semble très bien organisé comme point de départ personnel avant d'intégrer quelques premières briques  indieweb. À terme, je prévois d'ajouter une UI de publication ouverte à quelques amis voyageurs prêts à contribuer. L'UI de publication retenue à cette heure est le CMS de Netlify qui me semble suffisamment simple pour des non développeurs et permet le paramétrage d'un workflow de publication. La mise à jour des articles et notes hors-connexion reste à étudier (synchronisations dès ouverture d'accès wifi ou IridiumGo)
+Afin de revisiter un projet personnel articulé autour du *bien vieillir*, j'ai choisi ici de d'étudier le paquet de code Hylia proposé par Andy Bell pour accompagner une  motorisation [Eleventy](https://11ty.io). L'intention serait d'utiliser le [CMS Netlify](https://www.netlifycms.org/) préconfiguré pour mettre à jour un  petit site personnel statique, simple et moins exigeant en consommation de ligne de commande que GoHugo. 
+
+Le package Hylia me semble à cette heure très bien organisé comme point de départ personnel pour étudier et intégrer sans trop de soucis quelques premières briques fondamentales indieweb.
+
+
+## UX, UI et usages  
+
+L'UI de publication retenue à cette heure est le CMS de Netlify qui me semble suffisamment simple pour des non développeurs et dispose d'un premier workflow de publication. La mise à jour des articles et notes **hors-connexion** sera étudiée au fil de mes navigations océaniques . (Synchronisations dès ouverture d'accès wifi ou accès à étudier via IridiumGo).
+
+## Point de départ : le kit de démarrage Hylia pour Eleventy
+
+Hylia est un kit de démarrage léger Eleventy avec le CMS Netlify pré-configuré, afin que vous puissiez installer en un clic, un blog accessible et progressif. Il vous donne un point de départ bien organisé pour le développer vous-même.
+Démarrez dès maintenant en déployant Hylia sur Netlify.
+
 
 ## Fonctionnalités
 
@@ -34,7 +46,7 @@ Hylia version 0.2.0 :
 
 ## Démarrage 
 
-### Choisi la Méthode d'un déploiement en un-clic vis Netlify 
+### Méthode 1 : déploiement en un-clic vers Netlify
 
 Vous pouvez aussi [déployer Hylia vers Netlify en un clic][deploy-to-netlify] et vous aurez votre site fonctionnel en quelques minutes.
 
@@ -83,52 +95,52 @@ Heureusement, ils fournissent un [guide très pratique pour démarrer](https://w
 
 En résumé,
 
-- Once you’ve set up the site on Netlify, go to “Settings” > “Identity” and enable Identity
-- Scroll down to the “Git Gateway” area, click “Enable Git Gateway” and follow the steps
-- Click the “Identity” tab at the top
-- Once you’ve enabled identity, click “Invite Users”
-- Check the invite link in your inbox and click the link in the email that’s sent to you
-- Set a password in the popup box
-- Go to `/admin` on your site and login
-- You’re in and ready to edit your content!
+- Une fois que vous avez installé le site sur Netlify, allez sur “Settings” > “Identity” et activez Identity
+- Descendez vers l'aire “Git Gateway”, cliquez sur “Enable Git Gateway” et suivez les étapes
+- Cliquez sur l'onglet “Identity” tout en haut
+- Une fois que vous avez activez Identity, cliquez sur “Invite Users”
+- Regardez le lien invite dans votre boîte de réception et cliquez le lien dans l'e-mail qui vous a été envoyé
+- Réglez un mot de passe dans la boîte popup
+- Allez sur /admin de votre site et connectez-vous
+- Vous êtes prêt.e pour éditer votre contenu !
 
 ## Design Tokens et Guide de Style
 
 ### Design Tokens
 
-Although Hylia has a pretty simple design, you can configure the core design tokens that control the colours, size ratio and fonts.
+Bien qu'Hylia ait un joli design vraiment simple, vous pouvez configurer les tokens design du noyau pour contrôler les couleurs, le ratio de taille et les fontes.
 
 ***
 
-**Note**: *Credit must be given to the hard work [Jina Anne](https://aycl.uie.com/virtual_seminars/design_tokens_scaling_design_with_a_single_source_of_truth) did in order for the concept of design tokens to even exist. You should watch [this video](https://www.youtube.com/watch?v=wDBEc3dJJV8), then [read this article](https://the-pastry-box-project.net/jina-bolton/2015-march-28) and then sign up for [this course](https://twitter.com/jina) to expand your knowledge.*
+**Note** : Le crédit doit être donné au dur travail de [Jina Anne](https://aycl.uie.com/virtual_seminars/design_tokens_scaling_design_with_a_single_source_of_truth) pour avoir fait exister le concept des design tokens. Vous devriez regarder [cette vidéo](https://www.youtube.com/watch?v=wDBEc3dJJV8), et [lire ensuite cet article](https://the-pastry-box-project.net/jina-bolton/2015-march-28) et pour finir vous enregistrer à [son cours](https://twitter.com/jina) pour améliorer votre connaissance.
 
-***
+---
 
-To change the design tokens in the CMS, find the “Globals” in the sidebar then in the presented options, select “Theme Settings”.
+Pour modifier les tokens de design dans le CMS, trouvez le “Globals” dans la barre latérale puis dans les options présentées et sélectionnez “Theme Settings”.
 
-To change the design tokens directly, edit [`_src/data/tokens.json`](https://github.com/andybelldesign/hylia/blob/master/src/_data/tokens.json).
+Pour changer directement les tokens de design, éditez [_src/data/tokens.json](https://github.com/andybelldesign/hylia/blob/master/src/_data/tokens.json) .
 
-The tokens are converted into maps that the Sass uses to compile the front-end CSS, so make sure that you maintain the correct structure of `tokens.json`.
+Les tokens sont convertis en cartes que le Sass utilise pour compiler le front-end CSS, aussi assurez vous de maintenir la structure correcte de `tokens.json`. 
 
 ### Guide de Style
 
-Your version of Hylia ships with a Styleguide by default. You can see a demo of the Styleguide at <https://hylia.website/styleguide/>.
+Votre version d’Hyla est livré avec un guide de style par défaut. Vous pouvez regarder une démo du Styleguide sur  <https://hylia.website/styleguide/>.
 
-You can edit the Styleguide by opening [`src/styleguide.njk`](https://github.com/andybelldesign/hylia/blob/master/src/styleguide.njk). If you don’t want the Styleguide, delete that file and the page will vanish.
+Vous pouvez éditer le Styleguide en ouvrant [src/styleguide.njk](https://github.com/andybelldesign/hylia/blob/master/src/styleguide.njk). Si vous ne voulez pas du  Styleguide, effacez ce fichier et la page disparaîtra.
 
 ## Sass
 
-Hylia is based on the [WIP v2 version of Stalfos](https://github.com/andybelldesign/stalfos/tree/feature/v2), which currently has no documentation (I know, I’m bad). Here is some very basic documentation for elements of the new framework that you will encounter on this project.
+Hylia est basé sur la version [WIP v2 de Stalfos](https://github.com/andybelldesign/stalfos/tree/feature/v2), qui n’a pas de documentation à cette heure (je sais, c’est mal). Voici une documentation très basique pour les éléments du nouveau framework que vous rencontrerez sur ce projet.
 
 ### Configuration
 
-The whole Sass system is powered by central config file, which lives here: [`_src/scss/_config.scss`](https://github.com/andybelldesign/hylia/blob/master/src/scss/_config.scss).
+Le système global Sass est motorisé par le fichier de configuration centrale, déposé ici : [_src/scss/_config.scss](https://github.com/andybelldesign/hylia/blob/master/src/scss/_config.scss).
 
-Before Sass is compiled, a `_tokens.scss` file is generated from the [design tokens config](https://github.com/andybelldesign/hylia/blob/master/src/_data/tokens.json) which is required.
+Avant que Sass ne soit compilé, un fichier `_tokens.scss` est généré à partir de la [config de design des tokens](https://github.com/andybelldesign/hylia/blob/master/src/_data/tokens.json) qui est requise.
 
-Key elements:
+Éléments-clés 
 
-- `$stalfos-size-scale`: A token driven size scale which by default, is a “Major Third” scale
+- `$stalfos-size-scale` : A token driven size scale which by default, is a “Major Third” scale
 - `$stalfos-colors`: A token driven map of colours
 - `$stalfos-util-prefix`: All pre-built, framework utilities will have this prefix. Example: the wrapper utility is '.sf-wrapper' because the default prefix is 'sf-'
 - `$metrics`: Various misc metrics to use around the site
@@ -191,12 +203,12 @@ Le réglage basique du CMS vous permet de modifier ce qui suit :
 - **Posts** : Créez et éditez les posts de blog
 - **Pages Génériques** : Créez des pages génériques qui utilisent un layout similaire aux posts
 - **Global site data** : Différents fragments de données de site globables telles que votre url, le titre, le nombre de posts par page et les détails de l'auteur.
-- **Navigation**: Edit your primary navigation items
-- **Theme**: Edit the design tokens that power the site’s theme
+- **Navigation**: Editez vos éléments primaires de navigation
+- **Theme**: Modifiez les tokens de design tokens qui motorisent le thème du site
 
 ## Venez m'aider 
 
-Ce projet est _super_ neuf et votre feedback sera le bienvenu. Afin que les choses puissent tourner en douceur, regardez SVP le  [guide de contribution et le code de conduite](https://github.com/andybelldesign/hylia/blob/master/contributing.md).
+Ce projet est _super_ neuf et votre feedback sera le bienvenu. Afin que les choses puissent tourner en douceur, regardez SVP le [guide de contribution et le code de conduite](https://github.com/andybelldesign/hylia/blob/master/contributing.md).
 
 Les trucs où j'attends de l'aide sont : 
 
