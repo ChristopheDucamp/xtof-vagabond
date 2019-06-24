@@ -1,6 +1,6 @@
 ## Étude : migrer un blog personnel GoHugo vers Eleventy 
 
-Afin de revisiter un projet personnel articulé autour du *bien vieillir*, j'ai choisi ici de d'étudier le paquet de code Hylia proposé par Andy Bell pour accompagner une  motorisation [Eleventy](https://11ty.io). L'intention serait d'utiliser le [CMS Netlify](https://www.netlifycms.org/) préconfiguré pour mettre à jour un  petit site personnel statique, simple et moins exigeant en consommation de ligne de commande que GoHugo. 
+Afin de revisiter un projet personnel articulé autour du *bien vieillir*, j'ai choisi ici de d'étudier le kit de démarrage [Hylia](https://github.com/andybelldesign/hylia) proposé par Andy Bell pour accompagner une  motorisation [Eleventy](https://11ty.io). Après un [déploiement en un clic sur Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/andybelldesign/hylia&stack=cms), je suis enchanté par mes premiers pas dans le [CMS Netlify](https://www.netlifycms.org/) préconfiguré. 
 
 Le package Hylia me semble à cette heure très bien organisé comme point de départ personnel pour étudier et intégrer sans trop de soucis quelques premières briques fondamentales indieweb.
 
@@ -17,30 +17,30 @@ Démarrez dès maintenant en déployant Hylia sur Netlify.
 
 ## Fonctionnalités
 
-Hylia version 0.2.0 :
+Hylia version 0.2.1 :
 
-✍️ Un [CMS Netlify](https://www.netlifycms.org/) pré-configuré  
-🎨 des design tokens personnalisables  
-🌍 Données globales et navigation personnalisable
-📂 Tags et archives de tag
-✅ Progressively enhanced, semantic and accessible  
-🎈 Front-end _super_ léger
-🚰 Système CSS motorisé par Sass avec utilitaire de générateur de classes
-⚙️ Service worker qui met en cache les pages afin que les équipiers puissent lire les articles hors-ligne au milieu de l'océan
-🚀 Un fil RSS pour les articles
+- ✍️ Un [CMS Netlify](https://www.netlifycms.org/) pré-configuré
+- 🎨 des design tokens personnalisables
+- 🌍 Données globales et navigation personnalisable
+- 📂 Tags et archives de tag
+- ✅ Amélioration progressive, sémantique et accessible 
+- 🎈 Front-end _super_ léger
+- 🚰 Système CSS motorisé par Sass avec utilitaire de générateur de classes
+- ⚙️ Service worker qui met en cache les pages afin que les utilisateurs puissent lire les articles hors-ligne
+- 🚀 Un fil RSS pour les articles
 
 ## Plan de Route 
 
-💬 Commentaires motorisés par les [Netlify Forms](https://www.netlify.com/docs/form-handling/)
-💡 Bascule pour les quarts de nuit en mode Sombre
-🗣 Webmentions  
-📖 Pagination  
-🐦 Intégration API de partage Web
-🗒 Mode hors-ligne avec liens vers les pages mises en cache
-📄 Site de Documentation 
-💅 Documentation Sass
-✍️ Documentation propre au CMS
-🖼 Une facilité pour pouvoir ajouter facilement un logo ou une marque
+- 💬 Commentaires motorisés par les [Netlify Forms](https://www.netlify.com/docs/form-handling/)
+- 💡 Bascule pour les quarts de nuit en mode Sombre
+- 🗣 Webmentions  
+- 📖 Pagination  
+- 🐦 Intégration API de partage Web
+- 🗒 Mode hors-ligne avec liens vers les pages mises en cache
+- 📄 Site de Documentation 
+- 💅 Documentation propre au Sass
+- ✍️ Documentation propre au CMS
+- 🖼 Une facilité pour pouvoir ajouter facilement un logo ou une marque
 
 ***
 
