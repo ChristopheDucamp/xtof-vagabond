@@ -14,7 +14,7 @@ Démarrez dès maintenant en déployant Hylia sur Netlify.
 
 ## Fonctionnalités
 
-Hylia version 0.2.1 :
+Hylia version 0.4.0 :
 
 - ✍️ Un [CMS Netlify](https://www.netlifycms.org/) pré-configuré
 - 🎨 des design tokens personnalisables
