@@ -1,5 +1,5 @@
 {% extends 'layouts/base.njk' %}
-{% set pageType = 'Post' %}
+{% set pageType = 'Feed item' %}
 
 {# Intro content #}
 {% set introHeading = title %}
@@ -8,7 +8,6 @@
   {% if date %}
     <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
   {% endif %}
-  <span role="text">— temps de lecture {{ helpers.getReadingTime(content) }} minute(s)</span>
 </p>
 {% endset %}
 
@@ -18,6 +17,14 @@
       {% include "partials/components/intro.njk" %}
       <div class="[ post__body ] [ inner-wrapper ] [ pad-top-900 {{ 'pad-bottom-900' if not site.enableThirdPartyComments }} text-500 ] [ sf-flow ] [ e-content ]">
         {{ content | safe }}
+        {% if image %}
+          <p>
+            <img src="{{ image }}" alt="{{ alt }}" /> 
+          </p>
+        {% endif %}
+        {% if linkUrl %}
+          <p><a href="{{ linkUrl }}" rel="external" aria-label="Visit: {{ linkUrl }}">{{ linkUrl }}</a></p>
+        {% endif %}
       </div>
       {% include "partials/global/availability.njk" %}
       {% if site.enableThirdPartyComments %}
@@ -45,9 +52,5 @@
     </article>
   </main>
 {% endblock %}
-{% block foot %}
-  {% if hasCodePen %}
-    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-  {% endif %}
-{% endblock %}
+
 {{ content | safe }}

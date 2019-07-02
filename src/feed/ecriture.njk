@@ -1,0 +1,33 @@
+---
+permalink: feed/ecriture.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Les Articles</title>
+	<subtitle>Les articles de Christophe Ducamp</subtitle>
+	<link href="https://christopheducamp.com/feed/ecriture.xml" rel="self"/>
+	<link href="https://christopheducamp.com/"/>
+	<updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+	<id>christopheducamp.com</id>
+	<author>
+		<name>Christophe Ducamp</name>
+		<email>christophe@ducamp.me</email>
+	</author>
+	{%- for post in collections.posts.slice(0, 15) %}
+        {% if not post.data.external %}
+            {% set absolutePostUrl %}https://andy-bell.design{{ post.url | url }}{% endset %}
+            <entry>
+                <title>{{ post.data.title }}</title>
+                <author>
+                    <name>Christophe Ducamp</name>
+                </author>
+                <link href="{{ absolutePostUrl }}"/>
+                <updated>{{ post.date | rssDate }}</updated>
+                <id>{{ absolutePostUrl }}</id>
+                <content type="html"><![CDATA[
+                    {{ post.templateContent | safe }}
+             ]]></content>
+            </entry>
+        {% endif %}
+	{%- endfor %}
+</feed>

@@ -5,6 +5,10 @@
 {% set introHeading = title %}
 {% set introSummary %}
   {{ content | safe }}
+  <p>{{ site.availability }}</p>
+  <p>
+    <a class="[ button ] [ weight-bold text-500 ]" href="mailto:christophe@ducamp.me?subject=Salut 👋 J'aimerais travailler avec toi">Louez-moi !</a>
+  <p>
 {% endset %}
 
 {# Post list content #}
@@ -14,7 +18,7 @@
 {# Archive link #}
 {% if postListItems.length < collections.posts.length %} 
   {% set paginationNextText = archiveButtonText %}
-  {% set paginationNextUrl = '/archive' %}
+  {% set paginationNextUrl = '/writing' %}
 {% endif %}
 
 {% block content %}

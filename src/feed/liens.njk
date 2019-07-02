@@ -1,0 +1,34 @@
+---
+permalink: feed/liens.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Les liens de xtof</title>
+	<subtitle>Quelques liens pratiques que j'aimerais partager avec mes amis marins</subtitle>
+	<link href="https://christopheducamp.com/feed/liens.xml" rel="self"/>
+	<link href="https://christopheducamp.com/"/>
+	<updated>{{ collections.liens | rssLastUpdatedDate }}</updated>
+	<id>https://christopheducamp.com</id>
+	<author>
+		<name>Christophe Ducamp</name>
+		<email>christophe@ducamp.me</email>
+	</author>
+	{%- for post in collections.sortedLinks.slice(0, 15) %}
+        {% if not post.data.external %}
+            {% set absolutePostUrl %}https://andy-bell.design{{ post.url | url }}{% endset %}
+            <entry>
+                <title>{{ post.data.title }}</title>
+                <author>
+                    <name>Christophe Ducamp</name>
+                </author>
+                <link href="{{ absolutePostUrl }}"/>
+                <updated>{{ post.date | rssDate }}</updated>
+                <id>{{ absolutePostUrl }}</id>
+                <content type="html"><![CDATA[
+                    {{ post.templateContent | safe }}
+                    <p><a href="{{ post.data.linkUrl }}">{{ post.data.linkUrl }}</a></p>
+             ]]></content>
+            </entry>
+        {% endif %}
+	{%- endfor %}
+</feed>
