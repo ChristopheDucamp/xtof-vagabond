@@ -1,7 +1,7 @@
 ## Étude : migrer un blog personnel GoHugo vers Eleventy 
 
-Afin de mettre mon blog personnel à jour, j'ai choisi ici le boilerplate d'Hylia proposé par Andy Bell pour mieux appréhender la motorisation [Eleventy](https://11ty.io). Séduit à cette heure par le [CMS Netlify](https://www.netlifycms.org/) préconfiguré pour mettre à jour un site personnel statique, simple et moins exigeant en consommation de ligne de commande que GoHugo. 
-Je serai en outre attentif pour m'essayer à poser premières briques fondamentales indieweb.
+Afin de mettre mon blog personnel à jour, j'ai choisi ici le kit de démarrage d'Hylia proposé par Andy Bell pour mieux appréhender la motorisation [Eleventy](https://11ty.io). Séduit à cette heure par le [CMS Netlify](https://www.netlifycms.org/) préconfiguré pour mettre à jour un site personnel statique, simple et moins exigeant en consommation de ligne de commande que GoHugo. 
+Intention : poser quelques premières briques fondamentales indieweb.
 
 ## UX, UI et usages  
 
@@ -94,15 +94,15 @@ En résumé,
 - Une fois que vous avez installé le site sur Netlify, allez sur “Settings” > “Identity” et activez Identity
 - Descendez vers l'aire “Git Gateway”, cliquez sur “Enable Git Gateway” et suivez les étapes
 - Cliquez sur l'onglet “Identity” tout en haut
-- Une fois que vous avez activez Identity, cliquez sur “Invite Users”
+- Une fois que vous avez activé  Identity, cliquez sur “Invite Users”
 - Regardez le lien invite dans votre boîte de réception et cliquez le lien dans l'e-mail qui vous a été envoyé
 - Réglez un mot de passe dans la boîte popup
-- Allez sur /admin de votre site et connectez-vous
+- Allez sur `/admin` de votre site et connectez-vous
 - Vous êtes prêt pour éditer votre contenu !
 
-## Design Tokens et Guide de Style
+## Tokens de Design et Guide de Style
 
-### Design Tokens
+### Tokens de Design 
 
 Bien qu'Hylia ait un joli design vraiment simple, vous pouvez configurer les tokens de design du noyau afin de contrôler les couleurs, le ratio de taille et les fontes.
 
@@ -120,7 +120,7 @@ Les tokens sont convertis en cartes que le Sass utilise pour compiler le front-e
 
 ### Guide de Style
 
-Votre version d’Hyla est livré avec un guide de style par défaut. Vous pouvez regarder une démo du Styleguide sur  <https://hylia.website/styleguide/>.
+Votre version d’Hylia est livrée avec un guide de style par défaut. Vous pouvez regarder une démo du Styleguide sur  <https://hylia.website/styleguide/>.
 
 Vous pouvez éditer le Styleguide en ouvrant [src/styleguide.njk](https://github.com/andybelldesign/hylia/blob/master/src/styleguide.njk). Si vous ne voulez pas du  Styleguide, effacez ce fichier et la page disparaîtra.
 
@@ -138,13 +138,12 @@ Avant que Sass ne soit compilé, un fichier `_tokens.scss` est généré à part
 
 - `$stalfos-size-scale` : Un jeton pour piloter l'échelle de taille qui, par défaut, est une échelle “Major Third”
 - `$stalfos-colors` : Un jeton pour piloter une carte de couleurs
-- `$stalfos-util-prefix` : Tous préconstruits, les utilitaires de framework auront ce préfixe. Exemple : l'utilitaire wrapper est '.sf-wrapper' parce que préfixe par défaut est 'sf-'
+- `$stalfos-util-prefix` : Tous préconstruits, les utilitaires de framework auront ce préfixe. Exemple : l'utilitaire wrapper est '.sf-wrapper' parce que le préfixe par défaut est 'sf-'
 - `$metrics` : Différentes métriques à utiliser sur l'ensemble du site
 - `$stalfos-config` : Ceci motorise tout de la génération d'utilitaire de classe jusqu'aux breakpoints pour activer/désactiver les composants/utilitaires pré-construits.
 
 ### Comment créer une nouvelle classe utilitaire avec le générateur
 
-Le génrateur de classes utilitaires 
 Le générateur de classes d’utilitaires vous permet de générer ce que vous voulez, sans donner d’avis sur le nom ou les propriétés de la classe.
 
 Pour ajouter une nouvelle classe, ajoutez un autre élément à la carte existante `$ stalfos-config`. Cet exemple ajoute un utilitaire pour les éléments flottants.
@@ -199,9 +198,9 @@ Le réglage basique du CMS vous permet de modifier ce qui suit :
 - **Page d'Accueil** : Éditez le contenu de votre page d'accueil
 - **Posts** : Créez et éditez les posts de blog
 - **Pages Génériques** : Créez des pages génériques qui utilisent un layout similaire aux posts
-- **Global site data** : Différents fragments de données de site globables telles que votre url, le titre, le nombre de posts par page et les détails de l'auteur.
+- **Global site data** : Différents fragments de données globales du site telles que votre url, le titre, le nombre de posts par page et les détails de l'auteur.
 - **Navigation**: Editez vos éléments primaires de navigation
-- **Theme**: Modifiez les tokens de design tokens qui motorisent le thème du site
+- **Theme**: Modifiez les tokens de design qui motorisent le thème du site
 
 ## Venez m'aider 
 
